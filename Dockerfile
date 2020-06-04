@@ -12,4 +12,6 @@ SHELL [ "/bin/bash" ]
 
 EXPOSE 80
 
-CMD /usr/sbin/nginx -g "daemon off;"
+WORKDIR /the/workdir/path
+
+CMD ["nginx", "-g", "daemon off;"]
