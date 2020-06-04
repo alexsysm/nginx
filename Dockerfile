@@ -1,5 +1,7 @@
 FROM ubuntu:latest
 
+LABEL github-dockerhub auto build
+
 RUN apt-get -y update && apt-get -y upgrade && \
     apt-get install -y iputils-ping net-tools vim && \
     apt-get install -y nginx
